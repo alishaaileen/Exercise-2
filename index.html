@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise 2</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+        <div class="columns is-gapless">
+          <div class="column is-5">
+            <section class="section hero left is-fullheight">
+              <div class="desc">
+                <h1 class="title is-1" style="color: #fff;">Simple Calculator</h1>
+                <p class="subtitle is-4 has-text-justified" style="color: #fff;">
+                  This is a simple Calculator 
+                  made with <code>HTML + CSS + JS</code>
+                </p>
+              </div>
+              <div class="more">
+                <div class="columns is-mobile">
+                  <div class="column is-narrow">
+                    <div class="socmed">
+                      <a href="https://www.instagram.com/alishaileen" target="_blank">
+                      <span class="icon is-medium" style="color:#fff;">
+                        <i class="fas fa-2x fab fa-instagram"></i>
+                      </span>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="column is-narrow">
+                    <div class="socmed">
+                      <a href="https://github.com/alishaileen" target="_blank">
+                      <span class="icon is-medium" style="color:#fff;">
+                          <i class="fab fa-2x fa-github"></i>
+                      </span>
+                    </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="column">
+            <div class="calc">
+              <div class="columns">
+                <div class="column">
+                  <div class="top">
+                    <form>
+                      <input type="text" name="display" class="display" value="0"/>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="columns is-mobile is-multiline is-centered">
+                  <div class="column is-half">
+                    <button
+                      class="tombol reset"
+                    >
+                      <p><b>AC</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                      <button
+                        class="tombol backspace"
+                      >
+                        <p><b>←</b></p>
+                      </button>
+                    </div>
+                    <div class="column">
+                      <button
+                        class="tombol operator"
+                        value="+"
+                        onclick="insert('+')"
+                      >
+                        <p><b>+</b></p>
+                      </button>
+                    </div>
+                </div>
+                <div class="columns is-mobile is-multiline is-centered">
+                  <div class="column">
+                    <button
+                      class="tombol"
+                      value="7"
+                      onclick="insert(7)"
+                    >
+                      <p><b>7</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                    <button
+                      class="tombol angka"
+                      value="8"
+                      onclick="insert(8)"
+                    >
+                      <p><b>8</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                    <button
+                      class="tombol"
+                      value="9"
+                      onclick="insert(9)"
+                    >
+                      <p><b>9</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                    <button
+                      class="tombol operator"
+                      value="-"
+                      onclick="insert('-')"
+                    >
+                      <p><b>-</b></p>
+                    </button>
+                  </div>
+                </div>
+                <div class="columns is-mobile is-centered">
+                  <div class="column">
+                    <button
+                      class="tombol angka"
+                      value="4"
+                      onclick="insert(4)"
+                    >
+                      <p><b>4</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                    <button
+                      class="tombol angka"
+                      value="5"
+                      onclick="insert(5)"
+                    >
+                      <p><b>5</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                    <button
+                      class="tombol angka"
+                      value="6"
+                      onclick="insert(6)"
+                    >
+                      <p><b>6</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                    <button
+                      class="tombol operator"
+                      value="×" onclick="insert('×')"
+                    >
+                      <p><b>×</b></p>
+                    </button>
+                  </div>
+                </div>
+                <div class="columns is-mobile is-centered">
+                  <div class="column">
+                    <button
+                      class="tombol angka"
+                      value="1"
+                      onclick="insert(1)"
+                    >
+                      <p><b>1</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                    <button
+                      class="tombol angka"
+                      value="2"
+                      onclick="insert(2)"
+                    >
+                      <p><b>2</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                    <button
+                      class="tombol angka"
+                      value="3"
+                      onclick="insert(3)"
+                    >
+                      <p><b>3</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                    <button
+                      class="tombol operator"
+                      value="÷"
+                      onclick="insert('÷')"
+                    >
+                      <p><b>÷</b></p>
+                    </button>
+                  </div>
+                </div>
+                <div class="columns is-mobile is-centered">
+                  <div class="column is-half">
+                    <button
+                      class="tombol angka"
+                      onclick="insert(0)"
+                      value="0"
+                    >
+                      <p><b>0</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                    <button
+                      class="tombol"
+                      onclick="insert('.')"
+                    >
+                      <p><b>.</b></p>
+                    </button>
+                  </div>
+                  <div class="column">
+                    <button
+                      class="tombol"
+                      id="result"
+                    >
+                      <p><b>=</b></p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
