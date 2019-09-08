@@ -1,5 +1,5 @@
 # Description
-It is just a regular calculator. Nothing special lol.
+It is just a regular calculator.
 # What can this calculator do?
 It can calculate two or more rational numbers with basic operators like :
 <ol>
